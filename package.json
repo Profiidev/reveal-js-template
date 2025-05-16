@@ -32,5 +32,11 @@
 		"onlyBuiltDependencies": [
 			"esbuild"
 		]
+	},
+	"dependencies": {
+		"@fontsource/jetbrains-mono": "^5.2.5",
+		"@fontsource/manrope": "^5.2.5",
+		"@types/reveal.js": "^5.0.5",
+		"reveal.js": "^5.2.1"
 	}
 }
