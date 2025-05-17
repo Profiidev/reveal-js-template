@@ -167,5 +167,5 @@
 </Slide>
 
 <Slide>
-    <p class="fragment animated scale-down">Let me Shrink!</p>
+  <p class="fragment animated scale-down">Let me Shrink!</p>
 </Slide>

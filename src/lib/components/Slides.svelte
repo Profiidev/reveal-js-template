@@ -28,6 +28,8 @@
       ]
     });
     deck.initialize();
+    // @ts-ignore
+    window.Reveal = deck;
   });
 </script>
 
