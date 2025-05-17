@@ -5,6 +5,7 @@
   import Markdown from 'reveal.js/plugin/markdown/markdown';
   import Highlight from 'reveal.js/plugin/highlight/highlight';
   import Notes from 'reveal.js/plugin/notes/notes';
+  import ClipCode from '@edc4it/reveal.js-railroad';
 
   import 'reveal.js/dist/reveal.css';
   import 'reveal.js/dist/theme/black.css';
@@ -12,7 +13,7 @@
 
   onMount(() => {
     const deck = new Reveal({
-      plugins: [Markdown, Highlight, Notes],
+      plugins: [Markdown, Highlight, Notes, ClipCode],
       autoAnimateEasing: 'ease',
       autoAnimateDuration: 1,
       hash: true

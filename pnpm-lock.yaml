@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@edc4it/reveal.js-railroad':
+        specifier: ^1.0.5
+        version: 1.0.5
       '@fontsource/jetbrains-mono':
         specifier: ^5.2.5
         version: 5.2.5
@@ -17,6 +20,9 @@ importers:
       '@types/reveal.js':
         specifier: ^5.0.5
         version: 5.0.5
+      add:
+        specifier: ^2.0.6
+        version: 2.0.6
       reveal.js:
         specifier: ^5.2.1
         version: 5.2.1
@@ -54,6 +60,9 @@ packages:
   '@ampproject/remapping@2.3.0':
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
+
+  '@edc4it/reveal.js-railroad@1.0.5':
+    resolution: {integrity: sha512-9NZJful7gXU+Gq60kRk9CgM78cs67tkY+I55hckotvxnDIx7U+nrZcGW+bw+EhH8hGl5UDMCLlNUMhpt+YZRYg==}
 
   '@esbuild/aix-ppc64@0.25.4':
     resolution: {integrity: sha512-1VCICWypeQKhVbE9oW/sJaAmjLxhVqacdkvPLEjwlttjfwENRSClS8EjBz0KzRyFSCPDIkuXW34Je/vk7zdB7Q==}
@@ -419,6 +428,9 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
 
+  add@2.0.6:
+    resolution: {integrity: sha512-j5QzrmsokwWWp6kUcJQySpbG+xfOBqqKnup3OIk1pz+kB/80SLorZ9V8zHFLO92Lcd+hbvq8bT+zOGoPkmBV0Q==}
+
   aria-query@5.3.2:
     resolution: {integrity: sha512-COROpnaoap1E2F000S62r6A60uHZnmlvomhfyT2DlTcrY1OrBKn2UhH7qn5wTC9zMvD0AY7csdPSNwKP+7WiQw==}
     engines: {node: '>= 0.4'}
@@ -628,6 +640,10 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
 
+  railroad-diagrams@https://codeload.github.com/tabatkins/railroad-diagrams/tar.gz/ea9a12393bbaa2c802b0449fd5bdf34b6868b83c:
+    resolution: {tarball: https://codeload.github.com/tabatkins/railroad-diagrams/tar.gz/ea9a12393bbaa2c802b0449fd5bdf34b6868b83c}
+    version: 1.1.0
+
   readdirp@4.1.2:
     resolution: {integrity: sha512-GDhwkLfywWL2s6vEjyhri+eXmfH6j1L7JE27WhqLeYzoh/A3DBaYGEj2H/HFZCn/kMfim73FXxEJTw06WtxQwg==}
     engines: {node: '>= 14.18.0'}
@@ -747,6 +763,12 @@ snapshots:
     dependencies:
       '@jridgewell/gen-mapping': 0.3.8
       '@jridgewell/trace-mapping': 0.3.25
+
+  '@edc4it/reveal.js-railroad@1.0.5':
+    dependencies:
+      deepmerge: 4.3.1
+      railroad-diagrams: https://codeload.github.com/tabatkins/railroad-diagrams/tar.gz/ea9a12393bbaa2c802b0449fd5bdf34b6868b83c
+      reveal.js: 5.2.1
 
   '@esbuild/aix-ppc64@0.25.4':
     optional: true
@@ -1004,6 +1026,8 @@ snapshots:
 
   acorn@8.14.1: {}
 
+  add@2.0.6: {}
+
   aria-query@5.3.2: {}
 
   axobject-query@4.1.0: {}
@@ -1175,6 +1199,8 @@ snapshots:
       svelte: 5.30.1
 
   prettier@3.5.3: {}
+
+  railroad-diagrams@https://codeload.github.com/tabatkins/railroad-diagrams/tar.gz/ea9a12393bbaa2c802b0449fd5bdf34b6868b83c: {}
 
   readdirp@4.1.2: {}
 

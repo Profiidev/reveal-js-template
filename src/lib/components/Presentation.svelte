@@ -150,3 +150,18 @@
 <Slide>
   <p class="capitalize">Get started 😎</p>
 </Slide>
+
+<Slide>
+  <script type="application/railroad">
+    Diagram(
+      'function',
+      NonTerminal('identifier'),
+      '(',
+      ZeroOrMore('param', ','),
+      ')',
+      '{',
+      ZeroOrMore(NonTerminal('statement')),
+      '}'
+    );
+  </script>
+</Slide>
