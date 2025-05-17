@@ -6,17 +6,26 @@
   import Highlight from 'reveal.js/plugin/highlight/highlight';
   import Notes from 'reveal.js/plugin/notes/notes';
   import ClipCode from '@edc4it/reveal.js-railroad';
+  import { Tldreveal } from 'tldreveal';
 
   import 'reveal.js/dist/reveal.css';
   import 'reveal.js/dist/theme/black.css';
   import 'reveal.js/plugin/highlight/monokai.css';
+  import 'tldreveal/dist/esm/index.css';
 
   onMount(() => {
     const deck = new Reveal({
-      plugins: [Markdown, Highlight, Notes, ClipCode],
+      plugins: [Markdown, Highlight, Notes, ClipCode, Tldreveal],
       autoAnimateEasing: 'ease',
       autoAnimateDuration: 1,
-      hash: true
+      scrollActivationWidth: undefined,
+      hash: true,
+      dependencies: [
+        {
+          src: 'node_modules/revealjs-animated/dist/revealjs-animated.js',
+          async: true
+        }
+      ]
     });
     deck.initialize();
   });
