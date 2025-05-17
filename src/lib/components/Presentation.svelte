@@ -1,11 +1,20 @@
 <script lang="ts">
   import Code from './Code.svelte';
   import Markdown from './Markdown.svelte';
+  import Notes from './Notes.svelte';
   import Slide from './Slide.svelte';
 </script>
 
 <Slide>
   <p class="capitalize">Svelte deck 🔥</p>
+</Slide>
+
+<Slide>
+  <p class="capitalize">With Notes</p>
+  <Notes>
+    <p>These are notes</p>
+    <p>They are not visible in the presentation</p>
+  </Notes>
 </Slide>
 
 <Slide>

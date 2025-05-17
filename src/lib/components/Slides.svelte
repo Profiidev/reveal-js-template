@@ -17,7 +17,7 @@
       autoAnimateDuration: 1,
       hash: true
     });
-    console.log(deck)
+    deck.initialize();
   });
 </script>
 
